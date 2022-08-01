@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="weather.css">
+    </head>
+    <body >
+        <form id="temp" onsubmit="cal() ; return false">
+            <label for="temperature">ENTER TEMPERATURE YOU WANT TO CONVERT</label><br/>
+            <input type="number" name="enter temp" id="enter temp"><br/>
+            <select name="select temp"  id="selecttemp">
+                <option value="celcius">celcius</option>
+                <option value="farenhiet">farenhiet</option>
+            </select><br/>
+            <input type="submit"  name="temp" id="submit"><br/>
+            <span id="results">temperature</span>
+            </form>
+           
+            <script>
+
+                const cal = () =>{
+                    const numbertemp=document.getElementById('enter temp').value;
+                    const tempselected=document.getElementById('selecttemp');
+                 
+
+                  const celciustofarenhiet = (celcius) => {
+let farenhiet=Math.round((celcius*9/5) +32);
+return farenhiet;
+                  }
+                  const farenhiettocelcius = (farenhiet) => {
+let celcius=Math.round((farenhiet-32) *5/9);
+return celcius;}
+
+          let result;
+                  if(valuetemp ='celcius'){
+                    result= celciustofarenhiet(numbertemp);
+                    document.getElementById('results').innerHTML= `${result}celcius    `;
+                  }else{
+                    result= farenhiettocelcius(numbertemp);
+                    document.getElementById('results').innerHTML= `${result}farenhiet `;
+
+                
+                  }
+                  
+                
+                }
+                
+            </script>
+                  
+              
+        
+    </body>
+</html>

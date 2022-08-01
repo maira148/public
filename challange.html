@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="challange.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <button class="minus">-</button>
+            <span class="num">01</span>
+            <button class="plus" >+</button>
+        </div>
+        <script>
+            const plus=document.querySelector(".plus");
+            minus=document.querySelector(".minus");
+            num=document.querySelector(".num");
+
+            let a=1;
+            plus.addEventListener("click" ,() => {
+a++
+a=(a<10)?"0"+a:a;
+num.innerText = a;
+console.log("a");
+            })
+
+            minus.addEventListener("click" ,() => {
+a--
+a=(a<10)?"0"-a:a;
+num.innerText = a;
+console.log("a");
+            })
+        </script>
+    </body>
+</html>

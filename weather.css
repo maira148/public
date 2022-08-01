@@ -1,0 +1,75 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient( white,blue);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+#temp{
+    margin-top: 60px;
+    width: 500px;
+    height: 300px;
+    border: solid 3px;
+    background-color: aliceblue;
+    
+
+
+}
+label{
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: blue;
+    
+
+}
+#enter temp{
+    margin-top: 10px;
+    border-color: blue ;
+    border: solid 3px;
+    padding: 5px;
+}
+
+
+#selecttemp{
+    margin-top: 10px;
+    background: black;
+    color: white;
+    border: blue solid 3px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+#submit{
+
+    padding: 5px;
+    margin-top: 10px;
+    background: black;
+    border: blue solid 3px;
+    color: azure;
+    font-size: 15px;
+    margin-bottom: 15px;
+    
+    
+}
+
+#results{
+    background: orange;
+    margin: 15px;
+    padding: 5px;
+
+    
+
+}

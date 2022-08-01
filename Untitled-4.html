@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="calculator.css">
+
+    </head>
+    <body >
+        
+        <form name="example" class="form">
+            <p>CALCULATER </p>
+   ENTER:         <input type="text" class="input" size="30" name="calculator"><br/>
+ ANSWER:<input type="text"  class="inputs" size="30" ANSWER name="answer"><br/>
+            <input type="button" name="B1" class="button" value="calculate" onclick="cal()">
+            <input type="reset" name="B2" class="button" value="reset">
+            
+        </form>
+        
+<script>
+    function cal() {
+        document.example.answer.value=
+            eval(document.example.calculator.value)
+        
+    }
+
+</script>
+           
+</body> 
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>
+</title>
+<link rel="stylesheet" href="mini project.css">
+</head>
+<body>
+</body>
+<div class="form">
+    <div class="combination">
+        <input type="text" class="cat" placeholder="MATH" id="m" >
+    </div>
+    <div class="combination">
+        <input type="text" class="cat" placeholder="CHEMISTRY" id="c" >
+    </div>
+    <div class="combination">
+        <input type="text" class="cat" placeholder="PHYSICS" id="p" >
+    </div>
+    <div class="combination">
+        <input type="text" class="cat" placeholder="COMPUTER/BIOLOGY" id="cb" >
+    </div>
+    <div class="combination">
+        <input type="text" class="cat" placeholder="ENGLISH" id="e" >
+    </div>
+    <div class="combination">
+        <input type="text" class="cat" placeholder="URDU"  id="u">
+    </div>
+    <div>
+        <input type="button" name="" value="show data" onclick="calcy()"  class="per" >
+    </div>
+    <div class="showdata">
+        <p id="showData" ></p>
+    </div>
+</div>
+<script>
+const calcy = () =>{
+    let m =document.getElementById('m').value;
+    let c =document.getElementById('c').value;
+let p=document.getElementById('p').value;
+let cb=document.getElementById('cb').value;
+
+let e =document.getElementById('e').value;
+let u=document.getElementById('u').value;
+let grades="";
+
+
+let totalGrades=parseFloat(m)+parseFloat(c)+parseFloat(p)+parseFloat(cb)+parseFloat(u)+parseFloat(e);
+
+let percentage=(totalGrades/600)*100;
+alert(percentage);
+if(percentage<=100 && percentage>=80){
+    grades='A';}
+    else if(percentage<=79 && percentage>=50){
+grades='B';}
+else if(percentage<=49 && percentage>=40){
+    grades='C';}
+    else{
+        grades='F';
+    }
+document.getElementById('showData').innerHTML =`Out of 600 your total is ${totalGrades} and percentage is ${percentage}% .<br></br> and the grade is ${grades}`
+}
+
+</script>
+</body>
+
+</html>
